@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: patient-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/patient_db
+    username: root
+    password: Mayank1999#
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  eureka:
+   client:
+     service-url:
+       defaultZone: http://localhost:8761/eureka
+
+
