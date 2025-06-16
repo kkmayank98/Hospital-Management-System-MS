@@ -7,6 +7,7 @@ import AppointmentList from './components/Appointment/AppointmentList';
 import AddPatient from './components/Patient/AddPatient';
 
 
+
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/doctors" element={<DoctorList />} />
         <Route path="/appointments" element={<AppointmentList />} />
         <Route path="/add-patient" element={<AddPatient />} />
+       
 
       </Routes>
     </Router>
